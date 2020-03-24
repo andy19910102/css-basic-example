@@ -1,0 +1,134 @@
+/*=============================================
+=                   GENERAL                   =
+=============================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a,
+button,
+section {
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+/*=============================================
+=                  SELECTORS                  =
+=============================================*/
+.container {
+    border: 2px solid black;
+}
+
+/*=============================================
+=                  BOX-MODEL                  =
+=============================================*/
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border: 3px solid black;
+}
+
+.box>* {
+    margin: 0;
+}
+
+/*=============================================
+=                   DISPLAY                   =
+=============================================*/
+
+.display-box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.d-block {
+    display: block;
+    /* 設定此元素為區塊元素 */
+}
+
+.d-inline {
+    display: inline;
+    /* 設定此元素為行內文字元素 */
+}
+
+.d-inline-block {
+    display: inline-block;
+    /* 設定此元素為行內區塊元素 */
+}
+
+.row {
+    border: 1px solid black;
+}
+
+.col {
+    border: 1px solid black;
+}
+
+/*=============================================
+=                  POSITION                   =
+=============================================*/
+.navbar {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #333;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.4);
+}
+
+.relative-btn {
+    border: none;
+    height: 40px;
+    color: white;
+    padding: 0 20px;
+    background: #30c39e;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    /* transition: all .3s ease; */
+}
+
+.relative-btn:hover {
+    background: #0085ad;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, .2);
+}
+
+.outer-box {
+    width: 200px;
+    height: 200px;
+    background: tomato;
+    border: 1px solid black;
+}
+
+.inner-box {
+    width: 80px;
+    height: 80px;
+    background: orange;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.card-header>img {
+    display: block;
+}
+
+.card-body {
+    padding: 10px 10px;
+}
+
+.card-body h4,
+.card-body p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
