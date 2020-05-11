@@ -23,18 +23,29 @@ section {
     border: 2px solid black;
 }
 
+.container>article {
+    background: #d7d7d8;
+}
+
 /*=============================================
 =                  BOX-MODEL                  =
 =============================================*/
 
-.box {
+.example-box {
     width: 300px;
     height: 300px;
-    background: white;
+    background: #faae40;
     border: 3px solid black;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    transition: all .5s ease;
 }
 
-.box>* {
+.example-box:hover {
+    background: #e29e3e;
+    box-shadow: 0px 25px 20px rgba(0,0,0,.2);
+}
+
+.example-box>* {
     margin: 0;
 }
 
@@ -45,7 +56,7 @@ section {
 .display-box {
     width: 100px;
     height: 100px;
-    background: tomato;
+    background: #00b2a9;
     border: 2px solid black;
     border-radius: 4px;
 }
@@ -90,6 +101,7 @@ section {
     color: white;
     padding: 0 20px;
     background: #30c39e;
+    cursor: pointer;
     border-radius: 6px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
     /* transition: all .3s ease; */
@@ -97,30 +109,51 @@ section {
 
 .relative-btn:hover {
     background: #0085ad;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, .2);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, .2);
 }
 
 .outer-box {
     width: 200px;
     height: 200px;
-    background: tomato;
+    color: white;
+    background: #003666;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .inner-box {
     width: 80px;
     height: 80px;
-    background: orange;
+    background: #2dde98;
+    border-radius: 5px;
+    opacity: .8;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.5);
+    /* 設定此元素定位到上層元素(.outer-box)的指定位置 */
+
+}
+
+.inner-box:hover {
+    opacity: 1;
 }
 
 .card {
     width: 300px;
-    border: 1px solid #dbdbdb;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2), 0 0 0 0px rgba(255, 99, 71, 0);
+    transition: all .3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 25px 20px rgba(0, 0, 0, .2), 0 0 0 3px rgba(255, 99, 71, 1);
 }
 
 .card-header>img {
     display: block;
+    filter: brightness(1);
+    transition: all .3s ease;
+}
+
+.card:hover .card-header>img {
+    filter: brightness(1.2);
 }
 
 .card-body {
@@ -142,5 +175,6 @@ section {
 }
 
 .card-btns button {
-    
+    color: tomato;
+    font-size: 22px;
 }

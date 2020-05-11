@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>定位模式</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- fontawesome.css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/github.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,6 +24,18 @@
     </section>
     <section>
         <h1>Relative</h1>
+        <!-- CSS設定範例 -->
+        <div class="example-code">
+            <pre>
+                <code class="css">
+選擇目標 {
+    /* 設定此元素定位模式為relative */
+    positon: relative;
+}
+                </code>
+            </pre>
+        </div>
+        <!-- CSS設定範例 end -->
         <p>設定下方的按鈕在hover後移動位置</p>
         <button class="relative-btn">Hover Me
             <i class="fas fa-hand-point-up"></i>
@@ -28,9 +43,22 @@
     </section>
     <section>
         <h1>Absolute</h1>
+        <!-- CSS設定範例 -->
+        <div class="example-code">
+            <pre>
+                <code class="css">
+選擇目標 {
+    /* 設定此元素定位模式為absolute */
+    positon: absolute;
+}
+                </code>
+            </pre>
+        </div>
+        <!-- CSS設定範例 end -->
         <p>將下方的小方塊定位到大方塊的右下角</p>
         <div class="outer-box">
             <div class="inner-box"></div>
+            <p>Text example.</p>
         </div>
     </section>
     <section>
@@ -72,8 +100,28 @@
     </section>
     <section>
         <h1>Fixed</h1>
+        <!-- CSS設定範例 -->
+        <div class="example-code">
+            <pre>
+    <code class="css">
+選擇目標 {
+    /* 設定此元素定位模式為fixed */
+    positon: fixed;
+}
+    </code>
+</pre>
+        </div>
+        <!-- CSS設定範例 end -->
         <p>製作一個置頂的區塊</p>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('.example-code>pre>code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
 </body>
 
 </html>

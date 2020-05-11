@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>顯示模式</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/github.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -20,6 +23,18 @@
     </section>
     <section>
         <h1>區塊元素(block)</h1>
+        <!-- CSS設定範例 -->
+        <div class="example-code">
+            <pre>
+                <code class="css">
+選擇目標 {
+    /* 設定此元素為區塊元素 */
+    display: block;
+}
+                </code>
+            </pre>
+        </div>
+        <!-- CSS設定範例 end -->
         <ul>
             <li></li>
             <li></li>
@@ -31,6 +46,18 @@
     </section>
     <section>
         <h1>行內文字元素(inline)</h1>
+        <!-- CSS設定範例 -->
+        <div class="example-code">
+            <pre>
+                <code class="css">
+選擇目標 {
+    /* 設定此元素為行內文字元素 */
+    display: inline;
+}
+                </code>
+            </pre>
+        </div>
+        <!-- CSS設定範例 end -->
         <ul>
             <li></li>
             <li></li>
@@ -43,6 +70,18 @@
     </section>
     <section>
         <h1>行內區塊元素(inline-block)</h1>
+        <!-- CSS設定範例 -->
+        <div class="example-code">
+            <pre>
+                <code class="css">
+選擇目標 {
+    /* 設定此元素為行內區塊元素 */
+    display: inline-block;
+}
+                </code>
+            </pre>
+        </div>
+        <!-- CSS設定範例 end -->
         <ul>
             <li></li>
             <li></li>
@@ -108,6 +147,14 @@
         </div>
         <!-- row end -->
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('.example-code>pre>code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
 </body>
 
 </html>
