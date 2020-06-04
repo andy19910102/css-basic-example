@@ -9,14 +9,31 @@
     <!-- fontawesome.css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/github.min.css">
+    <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav class="navbar"></nav>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <!-- 左側超連結 -->
+        <a href="#" class="navbar-brand">Brand</a>
+        <!-- 右側的超連結清單 -->
+        <div class="navbar-list">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <!-- 手機版切換導覽列顯示按鈕 -->
+        <button class="navbar-toggler">
+            <div class="line"></div>
+        </button>
+    </nav>
+    <!-- 導覽列 end -->
     <section>
         <h1>定位模式</h1>
         <p>定位模式設定 position: static | relative | absolute | fixed</p>
@@ -115,13 +132,7 @@
         <p>製作一個置頂的區塊</p>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelectorAll('.example-code>pre>code').forEach((block) => {
-                hljs.highlightBlock(block);
-            });
-        });
-    </script>
+    <script src="./js/code-highlight.js"></script>
 </body>
 
 </html>

@@ -27,6 +27,14 @@ section {
     background: #d7d7d8;
 }
 
+/* 
+   .container>p 選.container裡「...」的p
+   .container p 選.container裡「...」的p
+   .title+p 選「...」.title「...」的p
+*/
+
+
+
 /*=============================================
 =                  BOX-MODEL                  =
 =============================================*/
@@ -36,12 +44,13 @@ section {
     height: 300px;
     background: #faae40;
     border: 3px solid black;
+    margin: 50px auto;
     box-shadow: 0px 5px 10px rgba(0,0,0,.2);
     transition: all .5s ease;
 }
 
 .example-box:hover {
-    background: #e29e3e;
+    background: #f8a939;
     box-shadow: 0px 25px 20px rgba(0,0,0,.2);
 }
 
@@ -84,15 +93,114 @@ section {
     border: 1px solid black;
 }
 
+
 /*=============================================
 =                  POSITION                   =
 =============================================*/
 .navbar {
-    display: block;
+    display: flex;
+    /* 一個靠左一個靠右 */
+    justify-content: space-between;
+    /* 內部元素垂直置中對齊 */
+    align-items: center;
+    padding: 0 15px;
     width: 100%;
     height: 50px;
     background: #333;
     box-shadow: 0px 5px 20px rgba(0,0,0,.4);
+}
+
+.navbar a {
+    color: white;
+    /* text-decoration: underline; */
+    text-decoration: none;
+}
+
+.navbar-list a {
+    margin-right: 20px;
+}
+
+.navbar-list a:last-child {
+    margin-right: 0;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+/* 手機版 <= 600px */
+@media (max-width: 600px) {
+    .navbar-list {
+        position: fixed;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transition: all .5s ease-out;
+    }
+    /* 選同時擁有.navbar-list與.active的元素 */
+    .navbar-list.active {
+        left: 0px;
+    }
+
+    .navbar-list a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+    }
+
+    .line {
+        width: 25px;
+        height: 2px;
+        background: white;
+        position: relative;
+        /* transform: rotateZ(45deg); */
+    }
+
+    .line.rotate {
+        transform: rotateZ(45deg);
+    }
+
+    .line.rotate:before {
+        top: 0;
+    }
+
+    .line.rotate:after {
+        transform: rotateZ(270deg);
+        bottom: 0px;
+    }
+
+    .line,
+    .line:before,
+    .line:after {
+        transition: all .3s ease-out;
+    }
+
+    .line:before,
+    .line:after {
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: white;
+        display: block;
+        position: absolute;
+        /* top: -5px; */
+    }
+
+    .line:before {
+        top: -8px;
+    }
+    .line:after {
+        bottom: -8px;
+    }
 }
 
 .relative-btn {
