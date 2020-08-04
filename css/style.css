@@ -67,7 +67,7 @@ section {
 =                  BOX-MODEL                  =
 =============================================*/
 
-.example-box {
+.demo-box {
     width: 300px;
     height: 300px;
     /* 試著調整border的大小看看會有什麼改變？ */
@@ -77,12 +77,12 @@ section {
     transition: all .5s ease;
 }
 
-.example-box:hover {
+.demo-box:hover {
     box-shadow: 0px 25px 20px rgba(0,0,0,.2);
 }
 
-/* 去除.example-box裡面所有元素(*)的預設margin */
-.example-box * {
+/* 去除.demo-box裡面所有元素(*)的預設margin */
+.demo-box * {
     margin: 0;
 }
 
