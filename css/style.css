@@ -27,6 +27,34 @@ section {
     background: #d7d7d8;
 }
 
+.btn-group a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgb(188, 116, 255);
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.btn-group a:hover {
+    background-color: rgb(151, 80, 218);
+}
+
+/* 
+   CSS屬性衝突規則
+   1. 選擇器層級一樣，屬性衝突「」生效
+   2. 選擇器層級不同，屬性衝突「」生效
+*/
+
+.title {
+    color: red;
+}
+
+.title {
+    color: blue;
+}
+
 /* 
    .container>p 選.container裡「...」的p
    .container p 選.container裡「...」的p
@@ -42,19 +70,19 @@ section {
 .example-box {
     width: 300px;
     height: 300px;
-    background: #faae40;
+    /* 試著調整border的大小看看會有什麼改變？ */
     border: 3px solid black;
-    margin: 50px auto;
+    background: #c4afff;
     box-shadow: 0px 5px 10px rgba(0,0,0,.2);
     transition: all .5s ease;
 }
 
 .example-box:hover {
-    background: #f8a939;
     box-shadow: 0px 25px 20px rgba(0,0,0,.2);
 }
 
-.example-box>* {
+/* 去除.example-box裡面所有元素(*)的預設margin */
+.example-box * {
     margin: 0;
 }
 
