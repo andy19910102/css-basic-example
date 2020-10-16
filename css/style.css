@@ -2,17 +2,7 @@
 =                   GENERAL                   =
 =============================================*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-a,
-button,
-section {
+body {
     font-family: 'Microsoft JhengHei', sans-serif;
 }
 
@@ -89,6 +79,9 @@ section {
 /*=============================================
 =                   DISPLAY                   =
 =============================================*/
+.display-section {
+    margin-bottom: 80px;
+}
 
 .display-box {
     width: 100px;

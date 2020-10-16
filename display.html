@@ -13,27 +13,11 @@
 </head>
 
 <body>
-    <section>
-        <h1>顯示模式</h1>
-        <p>區塊元素(block)代表: h1~h6,div,section,header,p,br,li,ul,ol...</p>
-        <p>行內文字元素(inline)代表: a, span, label</p>
-        <p>行內區塊元素(inline-block)代表: input, img, button</p>
-        <div class="display-box">div</div>
-        <a class="display-box">a</a>
-    </section>
-    <section>
-        <h1>區塊元素(block)</h1>
+    <h1>顯示模式</h1>
+    <section class="display-section">
+        <h2>區塊元素(block)</h2>
         <!-- CSS設定範例 -->
-        <div class="example-code">
-            <pre>
-                <code class="css">
-選擇目標 {
-    /* 設定此元素為區塊元素 */
-    display: block;
-}
-                </code>
-            </pre>
-        </div>
+        <div id="blockCodeExampleCodeBlock" class="example-code"></div>
         <!-- CSS設定範例 end -->
         <ul>
             <li>預設：</li>
@@ -45,19 +29,10 @@
         <div class="display-box">div</div>
         <a class="display-box">a</a>
     </section>
-    <section>
-        <h1>行內文字元素(inline)</h1>
+    <section class="display-section">
+        <h2>行內文字元素(inline)</h2>
         <!-- CSS設定範例 -->
-        <div class="example-code">
-            <pre>
-                <code class="css">
-選擇目標 {
-    /* 設定此元素為行內文字元素 */
-    display: inline;
-}
-                </code>
-            </pre>
-        </div>
+        <div id="inlineCodeExampleCodeBlock" class="example-code"></div>
         <!-- CSS設定範例 end -->
         <ul>
             <li>預設：</li>
@@ -70,19 +45,10 @@
         <div class="display-box">div</div>
         <a class="display-box">a</a>
     </section>
-    <section>
-        <h1>行內區塊元素(inline-block)</h1>
+    <section class="display-section">
+        <h2>行內區塊元素(inline-block)</h2>
         <!-- CSS設定範例 -->
-        <div class="example-code">
-            <pre>
-                <code class="css">
-選擇目標 {
-    /* 設定此元素為行內區塊元素 */
-    display: inline-block;
-}
-                </code>
-            </pre>
-        </div>
+        <div id="inlineBlockCodeExampleCodeBlock" class="example-code"></div>
         <!-- CSS設定範例 end -->
         <ul>
             <li>預設：</li>
@@ -95,8 +61,8 @@
         <div class="display-box">div</div>
         <a class="display-box">a</a>
     </section>
-    <section>
-        <h1>Flex元素(flex)</h1>
+    <section class="display-section">
+        <h2>Flex元素(flex)</h2>
         <p>試著將下方的六個.col的寬度設定為1/3並且並列排版。</p>
         <!-- row -->
         <div class="row">
@@ -152,6 +118,7 @@
         <!-- row end -->
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
+    <script src="./js/display.js"></script>
     <script src="./js/code-highlight.js"></script>
 </body>
 
