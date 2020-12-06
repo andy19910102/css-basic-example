@@ -25,20 +25,6 @@ body {
     padding: 0 8px 5px 0;
 }
 
-.btn-group a {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: rgb(188, 116, 255);
-    color: white;
-    text-decoration: none;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
-
-.btn-group a:hover {
-    background-color: rgb(151, 80, 218);
-}
-
 /* 
    CSS屬性衝突規則
    1. 選擇器層級一樣，屬性衝突「」生效
