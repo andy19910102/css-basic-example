@@ -1,0 +1,178 @@
+
+/*=============================================
+=                  POSITION                   =
+=============================================*/
+.navbar {
+    display: flex;
+    /* 一個靠左一個靠右 */
+    justify-content: space-between;
+    /* 內部元素垂直置中對齊 */
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+    height: 50px;
+    background: #333;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .4);
+}
+
+.navbar a {
+    color: white;
+    /* text-decoration: underline; */
+    text-decoration: none;
+}
+
+.navbar-list a {
+    margin-right: 20px;
+}
+
+.navbar-list a:last-child {
+    margin-right: 0;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+/* 手機版 <= 600px */
+@media (max-width: 600px) {
+    .navbar-list {
+        position: fixed;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transition: all .5s ease-out;
+    }
+
+    /* 選同時擁有.navbar-list與.active的元素 */
+    .navbar-list.active {
+        left: 0px;
+    }
+
+    .navbar-list a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+    }
+
+    .line {
+        width: 25px;
+        height: 2px;
+        background: white;
+        position: relative;
+        /* transform: rotateZ(45deg); */
+    }
+
+    .line,
+    .line:before,
+    .line:after {
+        transition: all .3s ease-out;
+    }
+
+    .line:before,
+    .line:after {
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: white;
+        display: block;
+        position: absolute;
+        /* top: -5px; */
+    }
+
+    .line:before {
+        top: -8px;
+    }
+
+    .line:after {
+        bottom: -8px;
+    }
+}
+
+.relative-btn {
+    border: none;
+    height: 40px;
+    color: white;
+    padding: 0 20px;
+    background: #30c39e;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    /* transition: all .3s ease; */
+}
+
+.relative-btn:hover {
+    background: #0085ad;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, .2);
+}
+
+.outer-box {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background: #003666;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.inner-box {
+    width: 80px;
+    height: 80px;
+    background: #2dde98;
+    border-radius: 5px;
+    opacity: .8;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+    /* 設定此元素定位到上層元素(.outer-box)的指定位置 */
+
+}
+
+.inner-box:hover {
+    opacity: 1;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2), 0 0 0 0px rgba(255, 99, 71, 0);
+    transition: all .3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 25px 20px rgba(0, 0, 0, .2), 0 0 0 3px rgba(255, 99, 71, 1);
+}
+
+.card-header>img {
+    display: block;
+    filter: brightness(1);
+    transition: all .3s ease;
+}
+
+.card:hover .card-header>img {
+    filter: brightness(1.2);
+}
+
+.card-body {
+    padding: 10px 10px;
+}
+
+.card-body h4,
+.card-body p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.card-header {}
+
+.card-btns {}
+
+.card-btns button {
+    color: tomato;
+    font-size: 22px;
+}
