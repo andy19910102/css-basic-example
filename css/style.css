@@ -6,7 +6,7 @@
     background:rgb(41, 255, 137);
 }
 
-.container>article {
+.container>div {
     border: 4px solid #000;
     background:rgb(255, 175, 28);
 }
