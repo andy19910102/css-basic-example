@@ -1,4 +1,3 @@
-
 /*=============================================
 =                  POSITION                   =
 =============================================*/
@@ -102,23 +101,25 @@
     height: 40px;
     color: white;
     padding: 0 20px;
-    background: #30c39e;
+    background: #ee9ca7;
     cursor: pointer;
-    border-radius: 6px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
-    /* transition: all .3s ease; */
+    /* 更多CSS cursor */
+    /* https://www.w3schools.com/cssref/pr_class_cursor.asp */
+    border-radius: 12px;
+    box-shadow: 0px 2px 3px #eea2ac94;
+    transition: all 1s ease;
 }
 
 .relative-btn:hover {
-    background: #0085ad;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, .2);
+    background: #D76D77;
+    box-shadow: 0px 8px 15px #eea2ac94;
 }
 
 .outer-box {
     width: 200px;
     height: 200px;
     color: white;
-    background: #003666;
+    background: #184c80;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -126,10 +127,11 @@
 .inner-box {
     width: 80px;
     height: 80px;
-    background: #2dde98;
+    background: #1febaa;
     border-radius: 5px;
     opacity: .8;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+    transition: all .3s ease;
     /* 設定此元素定位到上層元素(.outer-box)的指定位置 */
 
 }
@@ -175,4 +177,5 @@
 .card-btns button {
     color: tomato;
     font-size: 22px;
+    transition: all .5s ease;
 }

@@ -1,0 +1,37 @@
+.container {
+    border: 4px solid #000;
+    background: lightgreen;
+}
+
+.container>div {
+    border: 4px solid #000;
+    background: Khaki;
+}
+
+.container .label {
+    background: #000;
+    color: white;
+    padding: 0 8px 5px 0;
+}
+
+/* 
+   CSS屬性衝突規則
+   1. 選擇器層級一樣，屬性衝突「」生效
+   2. 選擇器層級不同，屬性衝突「」生效
+*/
+
+.title {
+    color: red;
+}
+
+.title {
+    color: blue;
+}
+
+/* 
+   階層選擇器
+   .container>p 選.container裡「...」的p
+   .container p 選.container裡「...」的p
+
+   .title+p 選「...」.title「...」的p
+*/
