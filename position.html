@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>定位模式</title>
+    <title>CSS 定位模式 | HTTML5, CSS3, jQuery, Bootstrap網頁設計基礎班</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- fontawesome.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/github.min.css">
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/position.css">
 </head>
 
@@ -19,14 +20,13 @@
     <!-- 導覽列 -->
     <nav class="navbar">
         <!-- 左側超連結 -->
-        <a href="#" class="navbar-brand">Brand</a>
+        <a href="./index.html" class="navbar-brand">Learn CSS</a>
         <!-- 右側的超連結清單 -->
         <div class="navbar-list">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+            <a href="./index.html">Home</a>
+            <a href="./box.html">Box</a>
+            <a href="./display.html">Display</a>
+            <a href="./position.html">Position</a>
         </div>
         <!-- 手機版切換導覽列顯示按鈕 -->
         <button class="navbar-toggler">
@@ -34,20 +34,23 @@
         </button>
     </nav>
     <!-- 導覽列 end -->
+
     <section>
-        <h1>定位模式</h1>
+        <h1>CSS 定位模式 (CSS position)</h1>
         <p>定位模式設定 position: static | relative | absolute | fixed</p>
         <p>定位相關屬性 top, bottom, left, right, z-index</p>
     </section>
+
     <section>
-        <h1>Relative</h1>
+        <h2>Relative</h2>
         <p>設定下方的按鈕在hover後移動位置</p>
         <button class="relative-btn">Hover Me
             <i class="fas fa-hand-point-up"></i>
         </button>
     </section>
+
     <section>
-        <h1>Absolute</h1>
+        <h2>Absolute</h2>
         <p>將下方的小方塊定位到大方塊的右下角</p>
         <div class="outer-box">
             <div class="inner-box"></div>
@@ -55,8 +58,9 @@
             <p>Text example.</p>
         </div>
     </section>
+
     <section>
-        <h1>定位練習</h1>
+        <h2>定位練習</h2>
         <p>將下方卡片的按鈕定位到圖片的右下角</p>
         <!-- card -->
         <div class="card">
@@ -92,6 +96,7 @@
         </div>
         <!-- card end -->
     </section>
+
 </body>
 
 </html>

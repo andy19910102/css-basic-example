@@ -1,3 +1,21 @@
 body {
-    font-family: 'Microsoft JhengHei',  "helvetica neue", arial, sans-serif;
+    font-family: 'Microsoft JhengHei', "helvetica neue", arial, sans-serif;
+}
+
+section {
+    padding: 50px 0px;
+    border-top: 1px dashed #333;
+}
+
+section h2 {
+    margin-top: 0px;
+}
+
+h1,
+h2 {
+    color: rgb(49, 47, 47);
+}
+
+.mt-50 {
+    margin-top: 50px;
 }
