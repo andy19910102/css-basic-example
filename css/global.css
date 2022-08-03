@@ -2,12 +2,14 @@ body {
     font-family: 'Microsoft JhengHei', "helvetica neue", arial, sans-serif;
 }
 
-section {
+section,
+footer {
     padding: 50px 0px;
     border-top: 1px dashed #333;
 }
 
-section h2 {
+section h2,
+footer h2 {
     margin-top: 0px;
 }
 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/github.min.css">
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/btn.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/position.css">
 </head>
@@ -34,13 +35,14 @@
         </button>
     </nav>
     <!-- 導覽列 end -->
-
-    <section>
+    <!-- header -->
+    <header>
         <h1>CSS 定位模式 (CSS position)</h1>
         <p>定位模式設定 position: static | relative | absolute | fixed</p>
         <p>定位相關屬性 top, bottom, left, right, z-index</p>
-    </section>
-
+    </header>
+    <!-- header end -->
+    <!-- section -->
     <section>
         <h2>Relative</h2>
         <p>設定下方的按鈕在hover後移動位置</p>
@@ -48,17 +50,18 @@
             <i class="fas fa-hand-point-up"></i>
         </button>
     </section>
-
+    <!-- section end -->
+    <!-- section -->
     <section>
         <h2>Absolute</h2>
         <p>將下方的小方塊定位到大方塊的右下角</p>
         <div class="outer-box">
             <div class="inner-box"></div>
-            <!-- <div class="center-box"></div> -->
-            <p>Text example.</p>
+            <p>Text in outer-box.</p>
         </div>
     </section>
-
+    <!-- section end -->
+    <!-- section -->
     <section>
         <h2>定位練習</h2>
         <p>將下方卡片的按鈕定位到圖片的右下角</p>
@@ -96,7 +99,18 @@
         </div>
         <!-- card end -->
     </section>
+    <!-- section end -->
+    <!-- footer -->
+    <footer>
+        <h2>Reference</h2>
 
+        <a class="btn" target="_blank" href="https://www.w3schools.com/css/css_positioning.asp">
+            <span>
+                W3Schools CSS Position
+            </span>
+        </a>
+    </footer>
+    <!-- footer end -->
 </body>
 
 </html>
