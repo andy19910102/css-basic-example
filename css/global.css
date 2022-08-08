@@ -15,9 +15,15 @@ body {
     cursor: default;
 }
 
+.heading1,
 .heading1>div,
 .heading1:after {
     transition: all .36s ease-out;
+}
+
+.heading1.scale {
+    transform: scale(.8);
+    transform-origin: left bottom;
 }
 
 .heading1:after {
