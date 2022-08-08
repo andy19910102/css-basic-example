@@ -54,11 +54,12 @@
 .card {
     width: 300px;
     box-shadow: 0 2px 3px rgba(52, 45, 55, 0.2), 0 0 0 0px rgba(255, 99, 71, 0);
+    margin-left: 10px;
     transition: all .3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 25px 20px rgba(52, 45, 55, 0.2), 0 0 0 3px rgba(255, 99, 71, 1);
+    box-shadow: 0 25px 20px rgba(52, 45, 55, 0.2), 0 0 0 10px rgba(255, 99, 71, 0.7);
 }
 
 .card-header>img {
@@ -83,7 +84,9 @@
 
 .card-header {}
 
-.card-btns {}
+.card-btns {
+    transition: all .5s ease;
+}
 
 .card-btns button {
     color: tomato;

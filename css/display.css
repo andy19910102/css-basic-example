@@ -40,6 +40,13 @@
     border: 4px solid #000;
     background: seashell;
     display: flex;
+    /* flex水平(主軸)對齊 */
+    /* flex-start, center, flex-end */
+    /* space-between, space-around */
+
+    /* flex垂直(次要軸)對齊 */
+    /* flex-start, center, flex-end */
+
 }
 
 .item-box {

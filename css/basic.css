@@ -2,6 +2,4 @@
 * {}
 
 /* 將body預設提供的margin歸零 */
-body {
-    margin: 0px;
-}
+body {}

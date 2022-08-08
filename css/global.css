@@ -1,5 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap');
+
 body {
     font-family: 'Microsoft JhengHei', "helvetica neue", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.heading1 {
+    font-family: 'Raleway', sans-serif;
+    width: fit-content;
+    font-size: 52px;
+    color: #23241f;
+    position: relative;
+}
+
+.heading1:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: salmon;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.lead {
+    font-size: 24px;
+    font-weight: 400;
 }
 
 section {
