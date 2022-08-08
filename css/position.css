@@ -3,6 +3,7 @@
     border: none;
     height: 48px;
     font-size: 18px;
+    font-weight: 700;
     color: white;
     padding: 0 20px;
     background: #ee9ca7;
@@ -91,5 +92,10 @@
 .card-btns button {
     color: tomato;
     font-size: 22px;
+    opacity: .7;
     transition: all .5s ease;
+}
+
+.card-btns button:hover {
+    opacity: 1;
 }

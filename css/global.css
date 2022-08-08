@@ -12,6 +12,12 @@ body {
     font-size: 52px;
     color: #23241f;
     position: relative;
+    cursor: default;
+}
+
+.heading1>div,
+.heading1:after {
+    transition: all .36s ease-out;
 }
 
 .heading1:after {
@@ -24,6 +30,21 @@ body {
     background: salmon;
     z-index: -1;
     transition: all .5s ease;
+}
+
+.heading1>div {
+    position: relative;
+    bottom: 0px;
+}
+
+.heading1:hover>div {
+    bottom: 6px;
+    transform: scale(.9);
+    text-shadow: 4px 4px 0px white;
+}
+
+.heading1:hover:after {
+    background: mediumaquamarine;
 }
 
 .lead {
