@@ -1,11 +1,13 @@
 .container {
     border: 4px solid #000;
-    background: lightgreen;
+    background: #90ee90;
+    background: linear-gradient(135deg, #90ee90, #48b28b)
 }
 
 .container>div {
     border: 4px solid #000;
-    background: Khaki;
+    background: #f0e68c;
+    background: linear-gradient(135deg, #f0e68c, #f2bc60)
 }
 
 .container .label {
