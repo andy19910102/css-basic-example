@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
 .container {
     border: 4px solid #000;
     background: #90ee90;
@@ -39,3 +48,57 @@ a {
    .container>p 選.container裡「...」的p
    .container p 選.container裡「...」的p
 */
+
+
+
+
+/* 
+    階層選擇器練習，試著使用階層選擇器完成以下任務：
+    1. 取消 .article 內的 h2 瀏覽器預設的 margin-top 且 置中。
+    2. 設定 .article 內的 p 行高為1.5倍，並使用 18px 的字體大小。
+    2. 讓三份 .article 內的 h2 有著不一樣的顏色。
+    3. 設計 .article 內的 a 有著按鈕的樣式。
+    4. 讓三份 .article 內的 a 有著不一樣的背景顏色。
+    5. 讓三份 .article 內的 .line 有著不一樣的背景顏色。
+*/
+
+.article-list {
+    padding: 0px 15px;
+}
+
+.article {
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 700px;
+    box-shadow: 0px 1px 1px #00000024, 0px 1px 3px #0000001f;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.article img {
+    width: 100%;
+    position: relative;
+    display: block;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.article:hover img {
+    transform: scale(1.1);
+}
+
+.article-body {
+    padding: 30px 20px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background: #000;
+    margin: 0 auto;
+}
